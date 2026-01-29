@@ -54,5 +54,6 @@ Priority: u=0
 {"bandwidth":"aaa;echo 1 > /tmp/1.txt"}
 ```
 
-![](C:\Users\user\AppData\Roaming\marktext\images\2026-01-29-16-57-42-8ba3cce4-7ddf-454f-9da0-e7966c6b9b42.png)
+![](../main/images2026-01-29-16-57-42-8ba3cce4-7ddf-454f-9da0-e7966c6b9b42.png)
+
 
