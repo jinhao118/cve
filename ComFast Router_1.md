@@ -54,6 +54,7 @@ Priority: u=0
 {"bandwidth":"aaa;echo 1 > /tmp/1.txt"}
 ```
 
-![](../main/images2026-01-29-16-57-42-8ba3cce4-7ddf-454f-9da0-e7966c6b9b42.png)
+![](../main/images/2026-01-29-16-57-42-8ba3cce4-7ddf-454f-9da0-e7966c6b9b42.png)
+
 
 
