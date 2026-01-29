@@ -16,7 +16,7 @@ COMFAST CF-N1 V2 V2.6.0 Router中发现了一个命令注入漏洞，攻击者�
 
 触发点位于`webmggnt` 组件中的`sub_44AB9C`方法，此处对于`channel`字段没有校验就使用`sprintf` 进行了拼接，并使用`system`执行。
 
-![](C:\Users\user\AppData\Roaming\marktext\images\2026-01-29-16-46-46-03dca505-9634-4b55-9a7b-f8f58821fc50.png)
+![](../main/images/2026-01-29-16-46-46-03dca505-9634-4b55-9a7b-f8f58821fc50.png)
 
 ### 概念验证
 
@@ -54,4 +54,5 @@ Priority: u=0
 {"channel":"abc;echo 1 > /tmp/1.txt"}
 ```
 
-![](C:\Users\user\AppData\Roaming\marktext\images\2026-01-29-16-49-45-image.png)
+![](../main/images/2026-01-29-16-49-45-image.png)
+
