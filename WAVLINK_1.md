@@ -10,9 +10,9 @@ A command injection vulnerability has been discovered in the WAVLINK WL-NU516U1-
 
 ### Vulnerability Details
 
-![](C:\Users\user\AppData\Roaming\marktext\images\2026-02-14-16-21-09-image.png)
+![](../main/images/2026-02-14-16-21-09-image.png)
 
-![](C:\Users\user\AppData\Roaming\marktext\images\2026-02-14-16-20-48-3bb4c631-9b1e-4c2e-89b8-ae0600d19ea4.png)
+![](../main/images/2026-02-14-16-20-48-3bb4c631-9b1e-4c2e-89b8-ae0600d19ea4.png)
 
 ### poc
 
@@ -35,4 +35,5 @@ Priority: u=0, i
 page=ota_new_upgrade&brand=admin&model=1";touch /tmp/1.txt;#"&version=admin111&firmware_url=11&md5=111
 ```
 
-![](C:\Users\user\AppData\Roaming\marktext\images\2026-02-14-16-26-48-image.png)
+![](../main/images/2026-02-14-16-26-48-image.png)
+
